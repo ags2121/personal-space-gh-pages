@@ -1,0 +1,233 @@
+html {
+    background: url("/assets/still-back-small.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font: icon;
+    letter-spacing: 0.7rem;
+    min-height: 100%;
+}
+
+body {
+    background: url("/assets/background-animated.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-back {
+    background: none;
+}
+
+.root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+@keyframes trans {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+h1 {    
+    /*font-size: 8.5rem;*/
+    letter-spacing: 1.3rem;
+}
+
+h3 {
+    letter-spacing: -4px;
+}
+
+h1, h3, h5, .menu, p {
+    animation-name: trans;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+h1, h3, h5 {
+    margin: 0;
+}
+
+.components {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 10rem;
+    flex: 1;
+}
+
+.components .about div {
+    width: 80%;
+    background-color: rgba(239, 214, 214, 0.91);
+    margin-left: 10%;
+    padding: 1rem;
+    letter-spacing: 0;
+}
+
+.music iframe {
+    border: none;
+    height: 380px;
+}
+
+.shows iframe {
+    background-color: rgba(239, 214, 214, 0.91);
+}
+
+.music iframe, .shows iframe {
+    width: 80% !important;
+    margin-left: 10%;
+}
+
+ul {
+    list-style: none;
+    /*padding: 0 0 0 0.5em;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    background-color: rgba(239, 214, 214, 0.58);
+    width: 100%;
+}
+
+li {
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+li:first-child {
+    margin-left: 1rem;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: #222;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #222;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.menu a {
+    cursor: pointer;
+    padding: 0 0.5rem 0 0;
+    font-size: 1.6rem;
+    max-width: 140px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.links a {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    width: 5rem;
+    height: 5rem;
+}
+
+.links a:hover {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+img, svg {
+    width: 5rem;
+    height: 5rem;
+}
+
+.pix img, .mail img {
+    width: 100%;
+    height: auto;
+    width: auto\9;
+    margin-bottom: 2rem;
+}
+
+.pix img:last-child {
+    margin-bottom: 0;
+}
+
+svg .color {
+    fill: #222;
+}
+
+svg:hover .color {
+    fill: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Popover */
+.popover.open {
+  display: block;
+}
+.popover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  top: 92%;
+  left: -50%;
+  -webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+  -moz-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+  filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+}
+
+@media (max-width: 643px) {
+    .menu a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 542px) {
+    .menu a {
+        font-size: 1rem;
+        /*letter-spacing: 0.1rem;*/
+    }
+    .links a {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    img, svg {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 498px) {
+    .menu a {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+}
