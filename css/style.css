@@ -72,12 +72,43 @@ h1, h3, h5 {
     height: 380px;
 }
 
-.shows iframe {
+.shows div {
     background-color: rgba(239, 214, 214, 0.91);
+    letter-spacing: 0;
 }
 
-.music iframe, .shows iframe {
+/* .bit-venue is a bandsintown-specific class name */
+.bit-venue a {
+    letter-spacing: 0;
+}
+
+.music iframe {
     width: 80% !important;
+    margin-left: 10%;
+}
+
+div.vidz {
+    position: relative;
+    width: 80%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.vidz iframe {
+    position: absolute;
+    top: 0;
+    left: 12%;
+    width: 100%;
+    height: 80%;
+}
+
+.shows > div {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.pix > div {
+    width: 80%;
     margin-left: 10%;
 }
 
