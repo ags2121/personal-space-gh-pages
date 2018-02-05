@@ -61,8 +61,8 @@ h1, h3, h5 {
 
 .components .about div {
     width: 80%;
+    margin-left: 10%;    
     background-color: rgba(239, 214, 214, 0.91);
-    margin-left: 10%;
     padding: 1rem;
     letter-spacing: 0;
 }
@@ -197,6 +197,11 @@ img, svg {
     height: auto;
     width: auto\9;
     margin-bottom: 2rem;
+}
+
+.mail {
+    width: 80%;
+    margin-left: 10%;
 }
 
 .pix img:last-child {
